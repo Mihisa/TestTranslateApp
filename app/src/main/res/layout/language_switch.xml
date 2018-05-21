@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/item_bg_card"
+    android:padding="14dp">
+
+    <Spinner
+        android:id="@+id/spinner_translate_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ib_translate_switch"
+        android:background="@null"
+        android:gravity="center" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ib_translate_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:srcCompat="@drawable/ic_swap" />
+
+    <Spinner
+        android:id="@+id/spinner_translate_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/ib_translate_switch"
+        android:background="@null"
+        android:gravity="center" />
+</RelativeLayout>

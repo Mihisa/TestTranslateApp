@@ -1,0 +1,38 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.mihisa.testtranslateapp.TranslateFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_translate_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+
+        <com.mihisa.testtranslateapp.views.SwitchLanguageView
+            android:id="@+id/view_switch_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+       <com.mihisa.testtranslateapp.views.TranslateFormView
+            android:id="@+id/view_translate_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_switch_form"
+            android:layout_margin="@dimen/translate_form_margin" />
+
+       <com.mihisa.testtranslateapp.views.TranslatedFormView
+            android:id="@+id/view_translated_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_translate_form"
+            android:layout_marginBottom="@dimen/translated_form_margin"
+            android:layout_marginLeft="@dimen/translated_form_margin"
+            android:layout_marginRight="@dimen/translated_form_margin"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</ScrollView>
